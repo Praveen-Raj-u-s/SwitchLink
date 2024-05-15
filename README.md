@@ -223,6 +223,15 @@ Now that we can program our PCBA, it is time to start bringing up the peripheral
 
 We use FreeRTOS for the whole implementation owing to its concurrency capabilities.
 
-Program - 
+Atmel Microchip Studio Project: https://github.com/Praveen-Raj-u-s/SwitchLink/tree/main/Code%20-%20Atmel%20Microchip%20Studio%20Project
+
+## 3D Design:
+
+I did the CAD design in Autodesk Fusion 360 
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/ff0209a3-6946-4e3f-bc7c-460af0e518f7)
+
+
+
 
 
