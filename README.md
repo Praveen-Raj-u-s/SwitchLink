@@ -78,50 +78,151 @@ Altium Project Link: https://upenn-eselabs.365.altium.com/designs/0D535367-1C3A-
 
 ## Schematics:
 
-* Main Sheet:
+Main Sheet:
 
 ![Switchlink Schematics-01](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/bcf5ba8b-e43f-4cb7-9aed-f86b0244c826)
 
-* Memory:
+Memory:
   
 ![Switchlink Schematics-02](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/7399f2b9-9b40-4a14-bfcb-3d1940047235)
 
-* MCU:
+MCU:
 
 ![Switchlink Schematics-03](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/1a79a15c-ed98-44dc-aca4-44ec9ed4b5fc)
 
-* USB to Serial FTDI:
+USB to Serial FTDI:
 
 ![Switchlink Schematics-04](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/d8d221ff-b83c-4f61-98e9-1a9999b1437a)
 
-* LIPO Charger:
+LIPO Charger:
 
 ![Switchlink Schematics-05](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/9940557d-a484-41e3-8d47-081e26c06199)
 
-* Buck Converter:
+Buck Converter:
 
 ![Switchlink Schematics-06](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/8d996f85-a7ac-4376-bde6-4b34112619f7)
 
-* Piezo-Buzzer:
+Piezo-Buzzer:
 
 ![Switchlink Schematics-07](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/be58b38a-cdf2-429b-8225-414e3e691ce0)
 
-* LDO:
+LDO:
 
 ![Switchlink Schematics-08](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/4c64e0d1-cc46-41be-9a11-3afdbac27f4b)
 
-* Proximity Sensor:
+Proximity Sensor:
   
 ![Switchlink Schematics-09](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/6ed32399-0cc6-4e11-8f7d-774d0ad69ed0)
 
 
-* USB-C Receptor:
+USB-C Receptor:
   
 ![Switchlink Schematics-11](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/4134a43d-57e8-428c-b7f9-c8e66e54cece)
 
 
 
+## PCB Simulation:
+
+2D:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/4bdf7e33-6d25-4709-910c-d449d8802ac1)
+
+3D: 
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/3eafb325-c32c-4426-a93c-409aa4327eb4)
 
 
+## PCB Fabricated:
+
+Top:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/ebb32657-d3be-49cf-a482-96b2a961031c)
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/644ea6bf-3a63-46c2-9a9c-20f69c43f8b4)
+
+
+Bottom:
+
+![WhatsApp Image 2024-05-14 at 21 51 46_9ab4633a](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/192e6fb9-3aff-42c0-ac5f-dc6092616151)
+
+
+## PCB Testing:
+
+### Power System Evaluation:
+
+#### Distinct Power Modes:
+
+The device has two power sources: single cell LiPo and USB power. It has one regulator: a 3.3V buck and an LDO to provide a 2.8V for the proximity sensors. My distinct power modes would be:
+
+Unregulated battery only is connected and ranges from 3.30V to 4.20V
+Regulated USB only is connected and ranges from 4.85V to 5.25V
+Both battery and USB are connected, so the USB voltage will be preferred (4.85-5.25V)
+
+#### Power Regulation Evaluation: 
+
+We want to determine how well (if at all!) the PCBA power regulation circuitry is working. We’ll leverage the oscilloscopes in the lab to capture various critical modes. Key questions we’ll be answering in this section are:
+
+Are there any critical failures (i.e shorting, over voltage, etc.)?
+
+Are we generating the voltage we expected?
+
+Is the ripple on the output acceptable?
+
+Setup for Evaluation:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/a5fdf0a5-9cd1-4697-9663-443c5a3e3e24)
+
+
+Oscilloscope capture of the startup transient of the regulated output:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/845e294a-c50f-4e6f-b1b5-9725a99df6e5)
+
+
+Oscilloscope capture of the steady state of the regulated output:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/cfc490a0-c863-4d05-8764-80b57899dc04)
+
+
+#### E-load testing:
+
+We’ll load test our riskiest regulation circuit. We do not need to do load testing on all of our power regulation circuits! Only the one that is the highest risk. For example, if I have a 3.3V buck or a 12V boost, I would be more concerned about the large change in voltage required for the 12V boost.
+
+For a chosen regulation circuit, we review our expected current load. Then, use the E-Load to evaluate the following conditions: 10%, 50%, 100%, and 120% of the expected current load. The E-Load will be measuring the actual voltage with the applied load - this is what we want to log.
+
+logged Values: [E-Load Test Values.xlsx](https://github.com/Praveen-Raj-u-s/SwitchLink/files/15317090/E-Load.Test.Values.xlsx)
+
+
+#### Thermal Evaluation under load:
+
+With our device under load, we take an image using the thermal camera.
+
+10% Load:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/edc408e7-f16a-4fee-ac85-7dc5f9394a36)
+
+50% Load:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/99f1bcb9-960e-41dd-891c-10269b59ac5e)
+
+#### Programming the board:
+
+JLink Debugger Connection:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/f6128ad1-4b5b-434f-95c5-ef873fe64c37)
+
+Device Programming in Atemel Microchip Studio:
+
+![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/f83fa6c3-2adc-4e2e-9536-98aeee8abee9)
+
+
+#### Peripheral Testing:
+
+Now that we can program our PCBA, it is time to start bringing up the peripherals in your system. Typically, we bring the systems online one by one. For each of these following steps, we may run into failures. In such failures, we review our firmware and Altium hardware files to try to find issues. We Use the debugging tools in the lab to check for voltage, analyze serial communication, etc.
+
+## Programming:
+
+We use FreeRTOS for the whole implementation owing to its concurrency capabilities.
+
+Program - 
 
 
