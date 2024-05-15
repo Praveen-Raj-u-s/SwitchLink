@@ -14,21 +14,29 @@ SwitchLink is a Smart Switch Control Unit that goes beyond conventional remote s
 
 ## Critical Components:
 
-* Microcontroller (MCU):
+Microcontroller (MCU):
 SAMW25 Xplained Pro: This microcontroller handles all processing tasks, including sensor data acquisition, control logic, and communication. It is integrated with FreeRTOS for real-time task management and efficient operation.
 
-* Sensors:
+![image-removebg-preview](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/be7518bf-673f-40b1-af91-a3addea1cad7)
 
--- VL6180X Proximity Sensors: Two proximity sensors are used for non-contact switch control. These sensors detect the presence of a hand or object near the switch, allowing for gesture-based control of the connected devices.
+Sensors:
 
--- OP Amp Comparator: Used in the Smart USB charging system to detect the full-charge status of connected devices. This comparator monitors the voltage level and triggers notifications when the device is fully charged.
+* VL6180X Proximity Sensors: Two proximity sensors are used for non-contact switch control. These sensors detect the presence of a hand or object near the switch, allowing for gesture-based control of the connected devices.
+
+![image-removebg-preview (1)](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/3cc1c76a-1670-48ac-99c9-2f5dde4c7727)
+
+
+* OP Amp Comparator: Used in the Smart USB charging system to detect the full-charge status of connected devices. This comparator monitors the voltage level and triggers notifications when the device is fully charged.
+
+![image-removebg-preview (2)](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/92fff826-ceda-4f69-b764-4a4bd96e856c)
+
 
 Actuators:
 
--- Relay Module: Controls the switching of electrical devices. The relay module is activated based on inputs from the proximity sensors or remote commands received over the Internet.
+* Relay Module: Controls the switching of electrical devices. The relay module is activated based on inputs from the proximity sensors or remote commands received over the Internet.
 
--- Piezo-buzzer: Generates acoustic notifications when a device connected to the USB charging system is fully charged. The buzzer is controlled using PWM signals to create different sound patterns.
+* Piezo-buzzer: Generates acoustic notifications when a device connected to the USB charging system is fully charged. The buzzer is controlled using PWM signals to create different sound patterns.
 
 Communication Module:
 
--- MQTT Protocol: Enables remote control and monitoring of the switches over the Internet. The device connects to an MQTT broker, allowing users to send commands and receive status updates from anywhere with Internet access.
+ * MQTT Protocol: Enables remote control and monitoring of the switches over the Internet. The device connects to an MQTT broker, allowing users to send commands and receive status updates from anywhere with Internet access.
