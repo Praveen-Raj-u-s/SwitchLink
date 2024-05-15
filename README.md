@@ -82,34 +82,41 @@ Altium Project Link: https://upenn-eselabs.365.altium.com/designs/0D535367-1C3A-
 
 ![Switchlink Schematics-01](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/bcf5ba8b-e43f-4cb7-9aed-f86b0244c826)
 
-* 
+* Memory:
+  
 ![Switchlink Schematics-02](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/7399f2b9-9b40-4a14-bfcb-3d1940047235)
 
+* MCU:
 
 ![Switchlink Schematics-03](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/1a79a15c-ed98-44dc-aca4-44ec9ed4b5fc)
 
+* USB to Serial FTDI:
 
 ![Switchlink Schematics-04](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/d8d221ff-b83c-4f61-98e9-1a9999b1437a)
 
+* LIPO Charger:
 
 ![Switchlink Schematics-05](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/9940557d-a484-41e3-8d47-081e26c06199)
 
+* Buck Converter:
 
 ![Switchlink Schematics-06](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/8d996f85-a7ac-4376-bde6-4b34112619f7)
 
+* Piezo-Buzzer:
 
 ![Switchlink Schematics-07](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/be58b38a-cdf2-429b-8225-414e3e691ce0)
 
+* LDO:
 
 ![Switchlink Schematics-08](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/4c64e0d1-cc46-41be-9a11-3afdbac27f4b)
 
-
+* Proximity Sensor:
+  
 ![Switchlink Schematics-09](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/6ed32399-0cc6-4e11-8f7d-774d0ad69ed0)
 
 
-![Switchlink Schematics-10](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/a2cd26d7-ed41-4fc6-8eef-9bd963059d20)
-
-
+* USB-C Receptor:
+  
 ![Switchlink Schematics-11](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/4134a43d-57e8-428c-b7f9-c8e66e54cece)
 
 
