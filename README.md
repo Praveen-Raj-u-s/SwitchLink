@@ -11,6 +11,8 @@ SwitchLink is a Smart Switch Control Unit that goes beyond conventional remote s
 * Remote Control: Allows switching control over the Internet using MQTT.
 * SwitchLink enhances the usability and safety of home appliances and devices, providing both manual and remote control options.
 
+Bill of Materials: https://github.com/Praveen-Raj-u-s/SwitchLink/blob/main/Bill%20of%20Materials.BomDoc
+
 
 ## Critical Components:
 
@@ -130,6 +132,10 @@ USB-C Receptor:
 3D: 
 
 ![image](https://github.com/Praveen-Raj-u-s/SwitchLink/assets/114270637/3eafb325-c32c-4426-a93c-409aa4327eb4)
+
+## Fabrication & Assembly Files (Draftsmanship):
+
+File Link: https://github.com/Praveen-Raj-u-s/SwitchLink/tree/main/Draftsmanship
 
 
 ## PCB Fabricated:
