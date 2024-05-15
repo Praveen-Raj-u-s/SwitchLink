@@ -1,0 +1,629 @@
+TC1BC 999:495.770   SEGGER J-Link V7.52a Log File
+TC1BC 999:496.437   DLL Compiled: Jul 28 2021 11:08:12
+TC1BC 999:496.479   Logging started @ 2024-04-30 11:31
+TC1BC 999:496.517 - 999496.536ms
+TC1BC 999:501.610 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+TC1BC 999:503.607   Device "ATSAMD21G18" selected.
+TC1BC 999:504.560 - 2.889ms returns 0x00
+TC1BC 999:552.851 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+TC1BC 999:553.912 - 1.112ms returns 0x00
+TC1BC 999:554.183 JLINK_SetSpeed(4000)
+TC1BC 999:554.350 - 0.208ms
+TC1BC 999:554.418 JLINK_ResetPullsRESET(OFF)
+TC1BC 999:554.455 - 0.054ms
+TC1BC 999:554.492 JLINK_Connect()
+TC1BC 999:555.888   InitTarget() start
+TC1BC 999:556.130    J-Link Script File: Executing InitTarget()
+TC1BC 999:556.627   InitTarget()
+TC1BC 999:559.016   InitTarget() end
+TC1BC 999:559.884   Found SW-DP with ID 0x0BC11477
+TC1BC 999:562.080   DPIDR: 0x0BC11477
+TC1BC 999:562.120   Scanning AP map to find all available APs
+TC1BC 999:562.737   AP[1]: Stopped AP scan as end of AP map has been reached
+TC1BC 999:562.773   AP[0]: AHB-AP (IDR: 0x04770031)
+TC1BC 999:562.796   Iterating through AP map to find AHB-AP to use
+TC1BC 999:563.684   AP[0]: Core found
+TC1BC 999:563.714   AP[0]: AHB-AP ROM base: 0x41003000
+TC1BC 999:564.399   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+TC1BC 999:564.429   Found Cortex-M0 r0p1, Little endian.
+TC1BC 999:665.547   -- Max. mem block: 0x000013E0
+TC1BC 999:665.943   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+TC1BC 999:666.272   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+TC1BC 999:666.640   CPU_ReadMem(4 bytes @ 0xE0002000)
+TC1BC 999:667.061   FPUnit: 4 code (BP) slots and 0 literal slots
+TC1BC 999:667.087   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+TC1BC 999:667.408   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+TC1BC 999:667.759   CPU_ReadMem(4 bytes @ 0xE0001000)
+TC1BC 999:668.092   CPU_WriteMem(4 bytes @ 0xE0001000)
+TC1BC 999:668.449   CoreSight components:
+TC1BC 999:668.511   ROMTbl[0] @ 41003000
+TC1BC 999:668.539   CPU_ReadMem(64 bytes @ 0x41003000)
+TC1BC 999:669.239   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+TC1BC 999:669.764   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+TC1BC 999:669.791   ROMTbl[1] @ E00FF000
+TC1BC 999:669.807   CPU_ReadMem(64 bytes @ 0xE00FF000)
+TC1BC 999:670.562   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+TC1BC 999:671.108   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+TC1BC 999:671.128   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+TC1BC 999:671.642   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+TC1BC 999:671.664   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+TC1BC 999:672.196   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+TC1BC 999:672.215   CPU_ReadMem(32 bytes @ 0x41006FE0)
+TC1BC 999:672.724   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+TC1BC 999:672.767 - 118.281ms returns 0x00
+TC1BC 999:672.839 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+TC1BC 999:672.863 - 0.010ms returns 0x00
+TC1BC 999:672.891 JLINK_Halt()
+TC1BC 999:675.864 - 2.987ms returns 0x00
+TC1BC 999:677.666 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+TC1BC 999:677.686 - 0.025ms returns 0
+TC1BC 999:677.703 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+TC1BC 999:677.737   CPU_ReadMem(4 bytes @ 0x41002018)
+TC1BC 999:678.073   Data:  05 03 01 10
+TC1BC 999:678.092 - 0.392ms returns 1 (0x1)
+TA110 999:686.283 JLINK_IsHalted()
+TA110 999:686.663 - 0.396ms returns TRUE
+TA110 999:686.697 JLINK_GetMOEs(...)
+TA110 999:686.720   CPU_ReadMem(4 bytes @ 0xE000ED30)
+TA110 999:687.052 - 0.370ms returns 0x01
+TA110 999:687.085 JLINK_ReadReg(R15 (PC))
+TA110 999:687.108 - 0.030ms returns 0x0001BF58
+TC1BC 999:792.339 JLINK_BeginDownload(Flags = 0x00000000)
+TC1BC 999:792.371 - 0.039ms
+TC1BC 999:792.403 JLINK_WriteMem(0x00012000, 0x27EE4 Bytes, ...)
+TC1BC 999:792.418   Data:  A0 77 00 20 45 A1 02 00 3D A2 02 00 3D A2 02 00 ...
+TC1BC 999:792.773   completely In flash
+TC1BC 999:792.976    -- Read from flash cache (163556 bytes @ 0x00012000)
+TC1BC 999:793.013 - 0.615ms returns 0x27EE4
+TC1BC 999:793.266 JLINK_WriteMem(0x00039EE4, 0x2C4 Bytes, ...)
+TC1BC 999:793.366   Data:  00 00 00 00 0C 00 00 00 00 00 00 00 00 00 00 00 ...
+TC1BC 999:793.393   completely In flash
+TC1BC 999:793.416    -- Read from flash cache (708 bytes @ 0x00039EE4)
+TC1BC 999:793.436 - 0.176ms returns 0x2C4
+TA110 999:886.358 JLINK_IsHalted()
+TA110 999:886.409 - 0.061ms returns TRUE
+TC1BC 999:887.356 JLINK_EndDownload()
+TC1BC 999:887.588   CPU_ReadMem(4 bytes @ 0x41006004)
+TC1BC 999:887.996   CPU_ReadMem(4 bytes @ 0xE000ED90)
+TC1BC 999:888.900    -- --------------------------------------
+TC1BC 999:888.939   Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+TC1BC 999:888.958    -- Start of determining dirty areas in flash cache
+TC1BC 999:889.053    -- End of determining dirty areas
+TC1BC 999:889.072    -- Start of preparing flash programming
+TC1BC 999:889.093    -- Calculating RAM usage
+TC1BC 999:893.624    -- RAM usage = 10020 Bytes
+TC1BC 999:893.646    -- Preserving CPU registers
+TC1BC 999:893.839    -- Preparing memory
+TC1BC 999:893.860    -- Preparing target
+TC1BC 999:893.874    -- Preserving target RAM temporarily used for programming
+TC1BC 999:957.392    -- Downloading RAMCode
+TC1BC 999:974.610    -- Preparing RAMCode
+TC1BC 999:979.805    -- Checking target RAM
+TC1BC 999:981.828    -- End of preparing flash programming
+TC1BC 999:982.065   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\JLinkGUIServer.exe
+TC1BC 999:982.380   Looking for J-Link GUI Server exe at: \JLinkGUIServer.exe
+TC1BC 1000:285.039   Failed to connect to J-Link GUI Server.
+TC1BC 1000:305.139    -- CPU speed could not be measured.
+TC1BC 1000:305.192    -- Start of comparing flash
+TC1BC 1000:305.208    -- CRC check was estimated as fastest method
+TC1BC 1000:305.229    -- Comparing range 0x12000 - 0x31FFF (512 Sectors, 128 KiB), using multi-block CRC calculation
+TC1BC 1000:400.970   
+ -- CRC does not match for sectors 0-1, 20-26, 34, 39, 41-42, 46, 51-53, 55-67, 70, 76, 82, 85-86, 89-91, 94-101, 103-104, 106-107, 109, 111, 116-117, 140, 145, 149, 154, 166, 170, 172, 176, 184-185, 199, 204, 208, 211, 216, 221, 228, 231-233, 235, 239, 241, 245-246, 251-252, 254, 258, 260-262, 265-266, 268, 271, 275-278, 280-281, 283-284, 286, 289, 297, 303, 306-308, 325, 328-329, 359, 361-362, 368, 373, 376, 378-379, 382-386, 389, 406-408, 417, 421, 427, 444, 451, 453, 458-460, 463, 465, 469, 476-477, 479, 483-484, 486, 490-491, 495, 498-499, 502, 506, 509-510
+
+TC1BC 1000:401.020    -- Comparing range 0x32000 - 0x3A1FF (130 Sectors, 32 KiB), using multi-block CRC calculation
+TC1BC 1000:415.133    -- CRC does not match for sectors 1-129
+TC1BC 1000:415.173    -- Comparing range 0x12200 - 0x133FF (18 Sectors, 4 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:421.167    -- All CRCs match
+TC1BC 1000:421.206    -- Comparing range 0x13B00 - 0x141FF (7 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:424.043    -- All CRCs match
+TC1BC 1000:424.078    -- Comparing range 0x14300 - 0x146FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:426.178    -- All CRCs match
+TC1BC 1000:426.207    -- Comparing range 0x14800 - 0x148FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:427.635    -- All CRCs match
+TC1BC 1000:427.658    -- Comparing range 0x14B00 - 0x14DFF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:429.711    -- All CRCs match
+TC1BC 1000:429.740    -- Comparing range 0x14F00 - 0x152FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:431.873    -- All CRCs match
+TC1BC 1000:431.899    -- Comparing range 0x15600 - 0x156FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:433.372    -- All CRCs match
+TC1BC 1000:433.401    -- Comparing range 0x16400 - 0x165FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:435.414    -- All CRCs match
+TC1BC 1000:435.458    -- Comparing range 0x16700 - 0x16BFF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:437.818    -- All CRCs match
+TC1BC 1000:437.855    -- Comparing range 0x16D00 - 0x171FF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:440.102    -- All CRCs match
+TC1BC 1000:440.128    -- Comparing range 0x17300 - 0x174FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:442.089    -- All CRCs match
+TC1BC 1000:442.131    -- Comparing range 0x17700 - 0x178FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:444.121    -- All CRCs match
+TC1BC 1000:444.165    -- Comparing range 0x17C00 - 0x17DFF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:446.230    -- All CRCs match
+TC1BC 1000:446.273    -- Comparing range 0x18600 - 0x186FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:447.792    -- All CRCs match
+TC1BC 1000:447.834    -- Comparing range 0x18900 - 0x189FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:449.382    -- All CRCs match
+TC1BC 1000:449.425    -- Comparing range 0x18C00 - 0x18CFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:451.018    -- All CRCs match
+TC1BC 1000:451.050    -- Comparing range 0x18E00 - 0x18EFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:452.580    -- All CRCs match
+TC1BC 1000:452.616    -- Comparing range 0x19000 - 0x193FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:454.809    -- All CRCs match
+TC1BC 1000:454.843    -- Comparing range 0x19600 - 0x1ABFF (22 Sectors, 5 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:460.424    -- All CRCs match
+TC1BC 1000:460.457    -- Comparing range 0x1AD00 - 0x1B0FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:462.612    -- All CRCs match
+TC1BC 1000:462.653    -- Comparing range 0x1B200 - 0x1B4FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:464.769    -- All CRCs match
+TC1BC 1000:464.807    -- Comparing range 0x1B600 - 0x1B9FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:467.076    -- All CRCs match
+TC1BC 1000:467.113    -- Comparing range 0x1BB00 - 0x1C5FF (11 Sectors, 2 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:470.770    -- All CRCs match
+TC1BC 1000:470.803    -- Comparing range 0x1C700 - 0x1C9FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:473.017    -- All CRCs match
+TC1BC 1000:473.045    -- Comparing range 0x1CB00 - 0x1CBFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:474.512    -- All CRCs match
+TC1BC 1000:474.543    -- Comparing range 0x1CD00 - 0x1CFFF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:476.720    -- All CRCs match
+TC1BC 1000:476.750    -- Comparing range 0x1D100 - 0x1D7FF (7 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:479.644    -- All CRCs match
+TC1BC 1000:479.673    -- Comparing range 0x1DA00 - 0x1E6FF (13 Sectors, 3 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:483.466    -- All CRCs match
+TC1BC 1000:483.495    -- Comparing range 0x1E800 - 0x1EBFF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:485.573    -- All CRCs match
+TC1BC 1000:485.596    -- Comparing range 0x1ED00 - 0x1EFFF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:487.870    -- All CRCs match
+TC1BC 1000:487.905    -- Comparing range 0x1F100 - 0x1F2FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:489.872    -- All CRCs match
+TC1BC 1000:489.902    -- Comparing range 0x1F400 - 0x1F7FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:492.034    -- All CRCs match
+TC1BC 1000:492.062    -- Comparing range 0x1F900 - 0x1FCFF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:494.202    -- All CRCs match
+TC1BC 1000:494.228    -- Comparing range 0x1FE00 - 0x203FF (6 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:497.673    -- All CRCs match
+TC1BC 1000:497.716    -- Comparing range 0x20500 - 0x206FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:499.677    -- All CRCs match
+TC1BC 1000:499.711    -- Comparing range 0x20A00 - 0x20AFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:501.234    -- All CRCs match
+TC1BC 1000:501.275    -- Comparing range 0x20C00 - 0x20EFF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:503.495    -- All CRCs match
+TC1BC 1000:503.532    -- Comparing range 0x21000 - 0x210FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:505.040    -- All CRCs match
+TC1BC 1000:505.078    -- Comparing range 0x21200 - 0x214FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:507.163    -- All CRCs match
+TC1BC 1000:507.204    -- Comparing range 0x21700 - 0x21AFF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:509.380    -- All CRCs match
+TC1BC 1000:509.408    -- Comparing range 0x21D00 - 0x21DFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:510.890    -- All CRCs match
+TC1BC 1000:510.922    -- Comparing range 0x21F00 - 0x221FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:513.022    -- All CRCs match
+TC1BC 1000:513.051    -- Comparing range 0x22300 - 0x223FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:514.544    -- All CRCs match
+TC1BC 1000:514.577    -- Comparing range 0x22700 - 0x228FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:516.537    -- All CRCs match
+TC1BC 1000:516.567    -- Comparing range 0x22B00 - 0x22BFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:518.064    -- All CRCs match
+TC1BC 1000:518.087    -- Comparing range 0x22D00 - 0x22EFF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:520.034    -- All CRCs match
+TC1BC 1000:520.065    -- Comparing range 0x23000 - 0x232FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:522.172    -- All CRCs match
+TC1BC 1000:522.202    -- Comparing range 0x23700 - 0x237FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:523.705    -- All CRCs match
+TC1BC 1000:523.734    -- Comparing range 0x23A00 - 0x23AFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:525.266    -- All CRCs match
+TC1BC 1000:525.302    -- Comparing range 0x23D00 - 0x23DFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:526.776    -- All CRCs match
+TC1BC 1000:526.815    -- Comparing range 0x23F00 - 0x240FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:528.817    -- All CRCs match
+TC1BC 1000:528.844    -- Comparing range 0x24200 - 0x248FF (7 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:531.712    -- All CRCs match
+TC1BC 1000:531.740    -- Comparing range 0x24A00 - 0x24EFF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:534.035    -- All CRCs match
+TC1BC 1000:534.061    -- Comparing range 0x25000 - 0x251FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:536.094    -- All CRCs match
+TC1BC 1000:536.129    -- Comparing range 0x25500 - 0x264FF (16 Sectors, 4 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:540.683    -- All CRCs match
+TC1BC 1000:540.730    -- Comparing range 0x26600 - 0x267FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:542.833    -- All CRCs match
+TC1BC 1000:542.866    -- Comparing range 0x26A00 - 0x286FF (29 Sectors, 7 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:550.064    -- All CRCs match
+TC1BC 1000:550.101    -- Comparing range 0x28800 - 0x288FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:551.571    -- All CRCs match
+TC1BC 1000:551.601    -- Comparing range 0x28B00 - 0x28FFF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:553.866    -- All CRCs match
+TC1BC 1000:553.906    -- Comparing range 0x29100 - 0x294FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:556.074    -- All CRCs match
+TC1BC 1000:556.106    -- Comparing range 0x29600 - 0x297FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:558.075    -- All CRCs match
+TC1BC 1000:558.117    -- Comparing range 0x29900 - 0x299FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:559.611    -- All CRCs match
+TC1BC 1000:559.641    -- Comparing range 0x29C00 - 0x29DFF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:561.623    -- All CRCs match
+TC1BC 1000:561.663    -- Comparing range 0x2A300 - 0x2A4FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:563.573    -- All CRCs match
+TC1BC 1000:563.599    -- Comparing range 0x2A600 - 0x2B5FF (16 Sectors, 4 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:568.246    -- All CRCs match
+TC1BC 1000:568.287    -- Comparing range 0x2B900 - 0x2C0FF (8 Sectors, 2 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:572.012    -- All CRCs match
+TC1BC 1000:572.057    -- Comparing range 0x2C200 - 0x2C4FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:574.116    -- All CRCs match
+TC1BC 1000:574.147    -- Comparing range 0x2C600 - 0x2CAFF (5 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:576.318    -- All CRCs match
+TC1BC 1000:576.344    -- Comparing range 0x2CC00 - 0x2DBFF (16 Sectors, 4 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:580.852    -- All CRCs match
+TC1BC 1000:580.891    -- Comparing range 0x2DD00 - 0x2E2FF (6 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:583.872    -- All CRCs match
+TC1BC 1000:583.905    -- Comparing range 0x2E400 - 0x2E4FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:585.374    -- All CRCs match
+TC1BC 1000:585.402    -- Comparing range 0x2E600 - 0x2E9FF (4 Sectors, 1024 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:587.559    -- All CRCs match
+TC1BC 1000:587.589    -- Comparing range 0x2ED00 - 0x2EEFF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:589.491    -- All CRCs match
+TC1BC 1000:589.520    -- Comparing range 0x2F000 - 0x2F0FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:591.007    -- All CRCs match
+TC1BC 1000:591.029    -- Comparing range 0x2F200 - 0x2F4FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:593.047    -- All CRCs match
+TC1BC 1000:593.085    -- Comparing range 0x2F600 - 0x2FBFF (6 Sectors, 1 KiB), using alternative multi-block CRC calculation
+TC1BC 1000:595.492    -- All CRCs match
+TC1BC 1000:595.518    -- Comparing range 0x2FE00 - 0x2FEFF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:597.013    -- All CRCs match
+TC1BC 1000:597.057    -- Comparing range 0x30000 - 0x302FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:599.088    -- All CRCs match
+TC1BC 1000:599.115    -- Comparing range 0x30500 - 0x305FF (1 Sector, 256 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:600.585    -- All CRCs match
+TC1BC 1000:600.612    -- Comparing range 0x30700 - 0x309FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:602.722    -- All CRCs match
+TC1BC 1000:602.749    -- Comparing range 0x30C00 - 0x30EFF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:604.837    -- All CRCs match
+TC1BC 1000:604.867    -- Comparing range 0x31000 - 0x311FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:606.797    -- All CRCs match
+TC1BC 1000:606.826    -- Comparing range 0x31400 - 0x315FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:608.817    -- All CRCs match
+TC1BC 1000:608.843    -- Comparing range 0x31700 - 0x319FF (3 Sectors, 768 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:610.908    -- All CRCs match
+TC1BC 1000:610.934    -- Comparing range 0x31B00 - 0x31CFF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:612.882    -- All CRCs match
+TC1BC 1000:612.910    -- Comparing range 0x31F00 - 0x320FF (2 Sectors, 512 Bytes), using alternative multi-block CRC calculation
+TC1BC 1000:615.007    -- All CRCs match
+TC1BC 1000:615.038    -- End of comparing flash
+TC1BC 1000:615.057    -- Start of erasing sectors
+TC1BC 1000:615.076    -- Erasing range 0x00012000 - 0x000121FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:618.019    -- Erasing range 0x00013400 - 0x00013AFF (  7 Sectors, 1 KB)
+TC1BC 1000:624.838    -- Erasing range 0x00014200 - 0x000142FF (  1 Sector, 256 Bytes)
+TC1BC 1000:626.491    -- Erasing range 0x00014700 - 0x000147FF (  1 Sector, 256 Bytes)
+TC1BC 1000:628.163    -- Erasing range 0x00014900 - 0x00014AFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:630.584    -- Erasing range 0x00014E00 - 0x00014EFF (  1 Sector, 256 Bytes)
+TC1BC 1000:632.936    -- Erasing range 0x00015300 - 0x000155FF (  3 Sectors, 768 Bytes)
+TC1BC 1000:636.174    -- Erasing range 0x00015700 - 0x000163FF ( 13 Sectors, 3 KB)
+TC1BC 1000:648.774    -- Erasing range 0x00016600 - 0x000166FF (  1 Sector, 256 Bytes)
+TC1BC 1000:650.501    -- Erasing range 0x00016C00 - 0x00016CFF (  1 Sector, 256 Bytes)
+TC1BC 1000:652.154    -- Erasing range 0x00017200 - 0x000172FF (  1 Sector, 256 Bytes)
+TC1BC 1000:653.822    -- Erasing range 0x00017500 - 0x000176FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:656.277    -- Erasing range 0x00017900 - 0x00017BFF (  3 Sectors, 768 Bytes)
+TC1BC 1000:659.777    -- Erasing range 0x00017E00 - 0x000185FF (  8 Sectors, 2 KB)
+TC1BC 1000:667.384    -- Erasing range 0x00018700 - 0x000188FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:669.739    -- Erasing range 0x00018A00 - 0x00018BFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:672.128    -- Erasing range 0x00018D00 - 0x00018DFF (  1 Sector, 256 Bytes)
+TC1BC 1000:673.741    -- Erasing range 0x00018F00 - 0x00018FFF (  1 Sector, 256 Bytes)
+TC1BC 1000:675.374    -- Erasing range 0x00019400 - 0x000195FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:677.734    -- Erasing range 0x0001AC00 - 0x0001ACFF (  1 Sector, 256 Bytes)
+TC1BC 1000:679.473    -- Erasing range 0x0001B100 - 0x0001B1FF (  1 Sector, 256 Bytes)
+TC1BC 1000:681.130    -- Erasing range 0x0001B500 - 0x0001B5FF (  1 Sector, 256 Bytes)
+TC1BC 1000:682.751    -- Erasing range 0x0001BA00 - 0x0001BAFF (  1 Sector, 256 Bytes)
+TC1BC 1000:684.369    -- Erasing range 0x0001C600 - 0x0001C6FF (  1 Sector, 256 Bytes)
+TC1BC 1000:686.021    -- Erasing range 0x0001CA00 - 0x0001CAFF (  1 Sector, 256 Bytes)
+TC1BC 1000:687.665    -- Erasing range 0x0001CC00 - 0x0001CCFF (  1 Sector, 256 Bytes)
+TC1BC 1000:689.629    -- Erasing range 0x0001D000 - 0x0001D0FF (  1 Sector, 256 Bytes)
+TC1BC 1000:691.284    -- Erasing range 0x0001D800 - 0x0001D9FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:694.554    -- Erasing range 0x0001E700 - 0x0001E7FF (  1 Sector, 256 Bytes)
+TC1BC 1000:696.196    -- Erasing range 0x0001EC00 - 0x0001ECFF (  1 Sector, 256 Bytes)
+TC1BC 1000:698.313    -- Erasing range 0x0001F000 - 0x0001F0FF (  1 Sector, 256 Bytes)
+TC1BC 1000:700.018    -- Erasing range 0x0001F300 - 0x0001F3FF (  1 Sector, 256 Bytes)
+TC1BC 1000:701.646    -- Erasing range 0x0001F800 - 0x0001F8FF (  1 Sector, 256 Bytes)
+TC1BC 1000:703.287    -- Erasing range 0x0001FD00 - 0x0001FDFF (  1 Sector, 256 Bytes)
+TC1BC 1000:705.009    -- Erasing range 0x00020400 - 0x000204FF (  1 Sector, 256 Bytes)
+TC1BC 1000:707.034    -- Erasing range 0x00020700 - 0x000209FF (  3 Sectors, 768 Bytes)
+TC1BC 1000:711.023    -- Erasing range 0x00020B00 - 0x00020BFF (  1 Sector, 256 Bytes)
+TC1BC 1000:712.632    -- Erasing range 0x00020F00 - 0x00020FFF (  1 Sector, 256 Bytes)
+TC1BC 1000:714.274    -- Erasing range 0x00021100 - 0x000211FF (  1 Sector, 256 Bytes)
+TC1BC 1000:715.889    -- Erasing range 0x00021500 - 0x000216FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:718.546    -- Erasing range 0x00021B00 - 0x00021CFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:721.012    -- Erasing range 0x00021E00 - 0x00021EFF (  1 Sector, 256 Bytes)
+TC1BC 1000:723.010    -- Erasing range 0x00022200 - 0x000222FF (  1 Sector, 256 Bytes)
+TC1BC 1000:725.039    -- Erasing range 0x00022400 - 0x000226FF (  3 Sectors, 768 Bytes)
+TC1BC 1000:728.561    -- Erasing range 0x00022900 - 0x00022AFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:731.022    -- Erasing range 0x00022C00 - 0x00022CFF (  1 Sector, 256 Bytes)
+TC1BC 1000:732.684    -- Erasing range 0x00022F00 - 0x00022FFF (  1 Sector, 256 Bytes)
+TC1BC 1000:734.273    -- Erasing range 0x00023300 - 0x000236FF (  4 Sectors, 1024 Bytes)
+TC1BC 1000:738.504    -- Erasing range 0x00023800 - 0x000239FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:740.906    -- Erasing range 0x00023B00 - 0x00023CFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:743.277    -- Erasing range 0x00023E00 - 0x00023EFF (  1 Sector, 256 Bytes)
+TC1BC 1000:744.931    -- Erasing range 0x00024100 - 0x000241FF (  1 Sector, 256 Bytes)
+TC1BC 1000:746.585    -- Erasing range 0x00024900 - 0x000249FF (  1 Sector, 256 Bytes)
+TC1BC 1000:748.215    -- Erasing range 0x00024F00 - 0x00024FFF (  1 Sector, 256 Bytes)
+TC1BC 1000:749.829    -- Erasing range 0x00025200 - 0x000254FF (  3 Sectors, 768 Bytes)
+TC1BC 1000:753.288    -- Erasing range 0x00026500 - 0x000265FF (  1 Sector, 256 Bytes)
+TC1BC 1000:755.025    -- Erasing range 0x00026800 - 0x000269FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:757.356    -- Erasing range 0x00028700 - 0x000287FF (  1 Sector, 256 Bytes)
+TC1BC 1000:759.018    -- Erasing range 0x00028900 - 0x00028AFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:761.735    -- Erasing range 0x00029000 - 0x000290FF (  1 Sector, 256 Bytes)
+TC1BC 1000:764.335    -- Erasing range 0x00029500 - 0x000295FF (  1 Sector, 256 Bytes)
+TC1BC 1000:766.026    -- Erasing range 0x00029800 - 0x000298FF (  1 Sector, 256 Bytes)
+TC1BC 1000:767.671    -- Erasing range 0x00029A00 - 0x00029BFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:770.596    -- Erasing range 0x00029E00 - 0x0002A2FF (  5 Sectors, 1 KB)
+TC1BC 1000:775.494    -- Erasing range 0x0002A500 - 0x0002A5FF (  1 Sector, 256 Bytes)
+TC1BC 1000:777.107    -- Erasing range 0x0002B600 - 0x0002B8FF (  3 Sectors, 768 Bytes)
+TC1BC 1000:780.577    -- Erasing range 0x0002C100 - 0x0002C1FF (  1 Sector, 256 Bytes)
+TC1BC 1000:782.199    -- Erasing range 0x0002C500 - 0x0002C5FF (  1 Sector, 256 Bytes)
+TC1BC 1000:783.825    -- Erasing range 0x0002CB00 - 0x0002CBFF (  1 Sector, 256 Bytes)
+TC1BC 1000:786.016    -- Erasing range 0x0002DC00 - 0x0002DCFF (  1 Sector, 256 Bytes)
+TC1BC 1000:787.681    -- Erasing range 0x0002E300 - 0x0002E3FF (  1 Sector, 256 Bytes)
+TC1BC 1000:789.386    -- Erasing range 0x0002E500 - 0x0002E5FF (  1 Sector, 256 Bytes)
+TC1BC 1000:791.022    -- Erasing range 0x0002EA00 - 0x0002ECFF (  3 Sectors, 768 Bytes)
+TC1BC 1000:794.865    -- Erasing range 0x0002EF00 - 0x0002EFFF (  1 Sector, 256 Bytes)
+TC1BC 1000:796.534    -- Erasing range 0x0002F100 - 0x0002F1FF (  1 Sector, 256 Bytes)
+TC1BC 1000:799.499    -- Erasing range 0x0002F500 - 0x0002F5FF (  1 Sector, 256 Bytes)
+TC1BC 1000:801.179    -- Erasing range 0x0002FC00 - 0x0002FDFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:804.017    -- Erasing range 0x0002FF00 - 0x0002FFFF (  1 Sector, 256 Bytes)
+TC1BC 1000:805.648    -- Erasing range 0x00030300 - 0x000304FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:808.020    -- Erasing range 0x00030600 - 0x000306FF (  1 Sector, 256 Bytes)
+TC1BC 1000:809.630    -- Erasing range 0x00030A00 - 0x00030BFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:812.032    -- Erasing range 0x00030F00 - 0x00030FFF (  1 Sector, 256 Bytes)
+TC1BC 1000:813.867    -- Erasing range 0x00031200 - 0x000313FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:816.778    -- Erasing range 0x00031600 - 0x000316FF (  1 Sector, 256 Bytes)
+TC1BC 1000:818.439    -- Erasing range 0x00031A00 - 0x00031AFF (  1 Sector, 256 Bytes)
+TC1BC 1000:820.110    -- Erasing range 0x00031D00 - 0x00031EFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:822.920    -- Erasing range 0x00032100 - 0x0003A0FF (128 Sectors, 32 KB)
+TC1BC 1000:934.200    -- Erasing range 0x0003A100 - 0x0003A1FF (  1 Sector, 256 Bytes)
+TC1BC 1000:935.889    -- End of erasing sectors
+TC1BC 1000:935.918    -- Start of flash programming
+TC1BC 1000:935.934    -- Programming range 0x00012000 - 0x000121FF (  2 Sectors, 512 Bytes)
+TC1BC 1000:935.964    -- Programming range 0x00013400 - 0x00013AFF (  7 Sectors, 1 KB)
+TC1BC 1000:935.988    -- Programming range 0x00014200 - 0x000142FF (  1 Sector, 256 Bytes)
+TC1BC 1000:949.154    -- Programming range 0x00014700 - 0x000147FF (  1 Sector, 256 Bytes)
+TC1BC 1000:956.238    -- Programming range 0x00014900 - 0x00014AFF (  2 Sectors, 512 Bytes)
+TC1BC 1000:958.748    -- Programming range 0x00014E00 - 0x00014EFF (  1 Sector, 256 Bytes)
+TC1BC 1000:962.475    -- Programming range 0x00015300 - 0x000155FF (  3 Sectors, 768 Bytes)
+TC1BC 1000:965.050    -- Programming range 0x00015700 - 0x000163FF ( 13 Sectors, 3 KB)
+TC1BC 1000:970.093    -- Programming range 0x00016600 - 0x000166FF (  1 Sector, 256 Bytes)
+TC1BC 1000:987.427    -- Programming range 0x00016C00 - 0x00016CFF (  1 Sector, 256 Bytes)
+TC1BC 1001:000.488    -- Programming range 0x00017200 - 0x000172FF (  1 Sector, 256 Bytes)
+TC1BC 1001:003.053    -- Programming range 0x00017500 - 0x000176FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:005.603    -- Programming range 0x00017900 - 0x00017BFF (  3 Sectors, 768 Bytes)
+TC1BC 1001:009.419    -- Programming range 0x00017E00 - 0x000185FF (  8 Sectors, 2 KB)
+TC1BC 1001:014.455    -- Programming range 0x00018700 - 0x000188FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:025.590    -- Programming range 0x00018A00 - 0x00018BFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:033.673    -- Programming range 0x00018D00 - 0x00018DFF (  1 Sector, 256 Bytes)
+TC1BC 1001:037.406    -- Programming range 0x00018F00 - 0x00018FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:039.935    -- Programming range 0x00019400 - 0x000195FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:043.566    -- Programming range 0x0001AC00 - 0x0001ACFF (  1 Sector, 256 Bytes)
+TC1BC 1001:047.396    -- Programming range 0x0001B100 - 0x0001B1FF (  1 Sector, 256 Bytes)
+TC1BC 1001:049.931    -- Programming range 0x0001B500 - 0x0001B5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:052.440    -- Programming range 0x0001BA00 - 0x0001BAFF (  1 Sector, 256 Bytes)
+TC1BC 1001:054.967    -- Programming range 0x0001C600 - 0x0001C6FF (  1 Sector, 256 Bytes)
+TC1BC 1001:057.574    -- Programming range 0x0001CA00 - 0x0001CAFF (  1 Sector, 256 Bytes)
+TC1BC 1001:060.100    -- Programming range 0x0001CC00 - 0x0001CCFF (  1 Sector, 256 Bytes)
+TC1BC 1001:062.666    -- Programming range 0x0001D000 - 0x0001D0FF (  1 Sector, 256 Bytes)
+TC1BC 1001:065.230    -- Programming range 0x0001D800 - 0x0001D9FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:067.771    -- Programming range 0x0001E700 - 0x0001E7FF (  1 Sector, 256 Bytes)
+TC1BC 1001:071.499    -- Programming range 0x0001EC00 - 0x0001ECFF (  1 Sector, 256 Bytes)
+TC1BC 1001:074.389    -- Programming range 0x0001F000 - 0x0001F0FF (  1 Sector, 256 Bytes)
+TC1BC 1001:076.945    -- Programming range 0x0001F300 - 0x0001F3FF (  1 Sector, 256 Bytes)
+TC1BC 1001:079.486    -- Programming range 0x0001F800 - 0x0001F8FF (  1 Sector, 256 Bytes)
+TC1BC 1001:082.058    -- Programming range 0x0001FD00 - 0x0001FDFF (  1 Sector, 256 Bytes)
+TC1BC 1001:084.577    -- Programming range 0x00020400 - 0x000204FF (  1 Sector, 256 Bytes)
+TC1BC 1001:087.108    -- Programming range 0x00020700 - 0x000209FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:089.678    -- Programming range 0x00020B00 - 0x00020BFF (  1 Sector, 256 Bytes)
+TC1BC 1001:094.776    -- Programming range 0x00020F00 - 0x00020FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:097.816    -- Programming range 0x00021100 - 0x000211FF (  1 Sector, 256 Bytes)
+TC1BC 1001:100.404    -- Programming range 0x00021500 - 0x000216FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:102.993    -- Programming range 0x00021B00 - 0x00021CFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:106.784    -- Programming range 0x00021E00 - 0x00021EFF (  1 Sector, 256 Bytes)
+TC1BC 1001:110.667    -- Programming range 0x00022200 - 0x000222FF (  1 Sector, 256 Bytes)
+TC1BC 1001:113.204    -- Programming range 0x00022400 - 0x000226FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:115.719    -- Programming range 0x00022900 - 0x00022AFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:120.710    -- Programming range 0x00022C00 - 0x00022CFF (  1 Sector, 256 Bytes)
+TC1BC 1001:124.422    -- Programming range 0x00022F00 - 0x00022FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:126.976    -- Programming range 0x00023300 - 0x000236FF (  4 Sectors, 1024 Bytes)
+TC1BC 1001:129.514    -- Programming range 0x00023800 - 0x000239FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:135.705    -- Programming range 0x00023B00 - 0x00023CFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:139.833    -- Programming range 0x00023E00 - 0x00023EFF (  1 Sector, 256 Bytes)
+TC1BC 1001:143.660    -- Programming range 0x00024100 - 0x000241FF (  1 Sector, 256 Bytes)
+TC1BC 1001:146.202    -- Programming range 0x00024900 - 0x000249FF (  1 Sector, 256 Bytes)
+TC1BC 1001:148.740    -- Programming range 0x00024F00 - 0x00024FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:151.275    -- Programming range 0x00025200 - 0x000254FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:153.798    -- Programming range 0x00026500 - 0x000265FF (  1 Sector, 256 Bytes)
+TC1BC 1001:158.876    -- Programming range 0x00026800 - 0x000269FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:161.793    -- Programming range 0x00028700 - 0x000287FF (  1 Sector, 256 Bytes)
+TC1BC 1001:165.681    -- Programming range 0x00028900 - 0x00028AFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:168.194    -- Programming range 0x00029000 - 0x000290FF (  1 Sector, 256 Bytes)
+TC1BC 1001:172.082    -- Programming range 0x00029500 - 0x000295FF (  1 Sector, 256 Bytes)
+TC1BC 1001:174.668    -- Programming range 0x00029800 - 0x000298FF (  1 Sector, 256 Bytes)
+TC1BC 1001:177.208    -- Programming range 0x00029A00 - 0x00029BFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:180.781    -- Programming range 0x00029E00 - 0x0002A2FF (  5 Sectors, 1 KB)
+TC1BC 1001:184.689    -- Programming range 0x0002A500 - 0x0002A5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:192.162    -- Programming range 0x0002B600 - 0x0002B8FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:197.324    -- Programming range 0x0002C100 - 0x0002C1FF (  1 Sector, 256 Bytes)
+TC1BC 1001:202.332    -- Programming range 0x0002C500 - 0x0002C5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:205.257    -- Programming range 0x0002CB00 - 0x0002CBFF (  1 Sector, 256 Bytes)
+TC1BC 1001:207.756    -- Programming range 0x0002DC00 - 0x0002DCFF (  1 Sector, 256 Bytes)
+TC1BC 1001:210.358    -- Programming range 0x0002E300 - 0x0002E3FF (  1 Sector, 256 Bytes)
+TC1BC 1001:212.901    -- Programming range 0x0002E500 - 0x0002E5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:215.421    -- Programming range 0x0002EA00 - 0x0002ECFF (  3 Sectors, 768 Bytes)
+TC1BC 1001:217.957    -- Programming range 0x0002EF00 - 0x0002EFFF (  1 Sector, 256 Bytes)
+TC1BC 1001:222.944    -- Programming range 0x0002F100 - 0x0002F1FF (  1 Sector, 256 Bytes)
+TC1BC 1001:225.886    -- Programming range 0x0002F500 - 0x0002F5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:228.430    -- Programming range 0x0002FC00 - 0x0002FDFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:230.979    -- Programming range 0x0002FF00 - 0x0002FFFF (  1 Sector, 256 Bytes)
+TC1BC 1001:234.748    -- Programming range 0x00030300 - 0x000304FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:237.277    -- Programming range 0x00030600 - 0x000306FF (  1 Sector, 256 Bytes)
+TC1BC 1001:241.443    -- Programming range 0x00030A00 - 0x00030BFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:244.068    -- Programming range 0x00030F00 - 0x00030FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:247.808    -- Programming range 0x00031200 - 0x000313FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:250.410    -- Programming range 0x00031600 - 0x000316FF (  1 Sector, 256 Bytes)
+TC1BC 1001:254.182    -- Programming range 0x00031A00 - 0x00031AFF (  1 Sector, 256 Bytes)
+TC1BC 1001:256.746    -- Programming range 0x00031D00 - 0x00031EFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:259.220    -- Programming range 0x00032100 - 0x0003A0FF (128 Sectors, 32 KB)
+TC1BC 1001:409.392    -- Programming range 0x0003A100 - 0x0003A1FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.324    -- End of flash programming
+TC1BC 1001:430.369    -- 0x12000 - 0x121FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:430.388    -- 0x13400 - 0x13AFF (  7 Sectors, 1 KoB)
+TC1BC 1001:430.401    -- 0x14200 - 0x142FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.421    -- 0x14700 - 0x147FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.443    -- 0x14900 - 0x14AFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:430.463    -- 0x14E00 - 0x14EFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.483    -- 0x15300 - 0x155FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:430.502    -- 0x15700 - 0x163FF ( 13 Sectors, 3 KoB)
+TC1BC 1001:430.523    -- 0x16600 - 0x166FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.538    -- 0x16C00 - 0x16CFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.551    -- 0x17200 - 0x172FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.564    -- 0x17500 - 0x176FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:430.588    -- 0x17900 - 0x17BFF (  3 Sectors, 768 Bytes)
+TC1BC 1001:430.608    -- 0x17E00 - 0x185FF (  8 Sectors, 2 KoB)
+TC1BC 1001:430.633    -- 0x18700 - 0x188FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:430.646    -- 0x18A00 - 0x18BFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:430.664    -- 0x18D00 - 0x18DFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.687    -- 0x18F00 - 0x18FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.706    -- 0x19400 - 0x195FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:430.729    -- 0x1AC00 - 0x1ACFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.752    -- 0x1B100 - 0x1B1FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.775    -- 0x1B500 - 0x1B5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.798    -- 0x1BA00 - 0x1BAFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.824    -- 0x1C600 - 0x1C6FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.848    -- 0x1CA00 - 0x1CAFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.873    -- 0x1CC00 - 0x1CCFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.898    -- 0x1D000 - 0x1D0FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.923    -- 0x1D800 - 0x1D9FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:430.959    -- 0x1E700 - 0x1E7FF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.978    -- 0x1EC00 - 0x1ECFF (  1 Sector, 256 Bytes)
+TC1BC 1001:430.992    -- 0x1F000 - 0x1F0FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.005    -- 0x1F300 - 0x1F3FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.018    -- 0x1F800 - 0x1F8FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.032    -- 0x1FD00 - 0x1FDFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.045    -- 0x20400 - 0x204FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.067    -- 0x20700 - 0x209FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:431.086    -- 0x20B00 - 0x20BFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.107    -- 0x20F00 - 0x20FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.129    -- 0x21100 - 0x211FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.151    -- 0x21500 - 0x216FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.171    -- 0x21B00 - 0x21CFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.185    -- 0x21E00 - 0x21EFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.198    -- 0x22200 - 0x222FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.211    -- 0x22400 - 0x226FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:431.224    -- 0x22900 - 0x22AFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.240    -- 0x22C00 - 0x22CFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.264    -- 0x22F00 - 0x22FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.285    -- 0x23300 - 0x236FF (  4 Sectors, 1024 Bytes)
+TC1BC 1001:431.307    -- 0x23800 - 0x239FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.327    -- 0x23B00 - 0x23CFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.349    -- 0x23E00 - 0x23EFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.369    -- 0x24100 - 0x241FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.383    -- 0x24900 - 0x249FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.396    -- 0x24F00 - 0x24FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.409    -- 0x25200 - 0x254FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:431.422    -- 0x26500 - 0x265FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.435    -- 0x26800 - 0x269FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.448    -- 0x28700 - 0x287FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.461    -- 0x28900 - 0x28AFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.474    -- 0x29000 - 0x290FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.487    -- 0x29500 - 0x295FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.500    -- 0x29800 - 0x298FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.513    -- 0x29A00 - 0x29BFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.526    -- 0x29E00 - 0x2A2FF (  5 Sectors, 1 KoB)
+TC1BC 1001:431.539    -- 0x2A500 - 0x2A5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.552    -- 0x2B600 - 0x2B8FF (  3 Sectors, 768 Bytes)
+TC1BC 1001:431.565    -- 0x2C100 - 0x2C1FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.578    -- 0x2C500 - 0x2C5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.591    -- 0x2CB00 - 0x2CBFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.604    -- 0x2DC00 - 0x2DCFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.617    -- 0x2E300 - 0x2E3FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.630    -- 0x2E500 - 0x2E5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.643    -- 0x2EA00 - 0x2ECFF (  3 Sectors, 768 Bytes)
+TC1BC 1001:431.656    -- 0x2EF00 - 0x2EFFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.669    -- 0x2F100 - 0x2F1FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.682    -- 0x2F500 - 0x2F5FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.695    -- 0x2FC00 - 0x2FDFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.708    -- 0x2FF00 - 0x2FFFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.721    -- 0x30300 - 0x304FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.734    -- 0x30600 - 0x306FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.747    -- 0x30A00 - 0x30BFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.760    -- 0x30F00 - 0x30FFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.773    -- 0x31200 - 0x313FF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.786    -- 0x31600 - 0x316FF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.799    -- 0x31A00 - 0x31AFF (  1 Sector, 256 Bytes)
+TC1BC 1001:431.812    -- 0x31D00 - 0x31EFF (  2 Sectors, 512 Bytes)
+TC1BC 1001:431.825    -- 0x32100 - 0x3A1FF (129 Sectors, 32 KoB)
+TC1BC 1001:431.843    -- Start of restoring
+TC1BC 1001:431.863    -- Restoring RAMCode
+TC1BC 1001:450.945    -- Restoring target memory
+TC1BC 1001:499.723    -- Restore target
+TC1BC 1001:499.759    -- Restore memory
+TC1BC 1001:499.772    -- Restoring CPU registers
+TC1BC 1001:499.800    -- End of restoring
+TC1BC 1001:499.884    -- Bank 0 @ 0x00000000: 87 ranges affected (71936 bytes)
+TC1BC 1001:499.927    -- Total: 1.610s (Prepare: 0.416s, Compare: 0.309s, Erase: 0.320s, Program & Verify: 0.511s, Restore: 0.051s)
+TC1BC 1001:499.961    -- Program & Verify speed: 137 KiB/s
+TC1BC 1001:502.702 - 1615.371ms returns 71936 (0x11900)
+TC1BC 1001:503.302 JLINK_ResetPullsRESET(ON)
+TC1BC 1001:503.325 - 0.029ms
+TC1BC 1001:503.342 JLINK_ResetNoHalt()
+TC1BC 1001:503.589   InitTarget() start
+TC1BC 1001:503.622    J-Link Script File: Executing InitTarget()
+TC1BC 1001:503.656   InitTarget()
+TC1BC 1001:505.920   InitTarget() end
+TC1BC 1001:506.475   Found SW-DP with ID 0x0BC11477
+TC1BC 1001:508.472   DPIDR: 0x0BC11477
+TC1BC 1001:508.515   AP map detection skipped. Manually configured AP map found.
+TC1BC 1001:508.546   AP[0]: AHB-AP (IDR: Not set)
+TC1BC 1001:509.408   AP[0]: Core found
+TC1BC 1001:509.456   AP[0]: AHB-AP ROM base: 0x41003000
+TC1BC 1001:509.925   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+TC1BC 1001:509.981   Found Cortex-M0 r0p1, Little endian.
+TC1BC 1001:610.675   -- Max. mem block: 0x000010C8
+TC1BC 1001:610.725   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+TC1BC 1001:611.041   CPU_ReadMem(4 bytes @ 0xE0002000)
+TC1BC 1001:611.404   FPUnit: 4 code (BP) slots and 0 literal slots
+TC1BC 1001:611.429   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+TC1BC 1001:611.744   CPU_ReadMem(4 bytes @ 0xE0001000)
+TC1BC 1001:612.102   CoreSight components:
+TC1BC 1001:612.144   ROMTbl[0] @ 41003000
+TC1BC 1001:612.170   CPU_ReadMem(64 bytes @ 0x41003000)
+TC1BC 1001:612.880   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+TC1BC 1001:613.430   ROMTbl[0][0]: E00FF000, CID: B105100D, PID: 000BB4C0 ROM Table
+TC1BC 1001:613.456   ROMTbl[1] @ E00FF000
+TC1BC 1001:613.471   CPU_ReadMem(64 bytes @ 0xE00FF000)
+TC1BC 1001:614.198   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+TC1BC 1001:614.722   ROMTbl[1][0]: E000E000, CID: B105E00D, PID: 000BB008 SCS
+TC1BC 1001:614.756   CPU_WriteMem(4 bytes @ 0xE0001000)
+TC1BC 1001:615.137   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+TC1BC 1001:615.682   ROMTbl[1][1]: E0001000, CID: B105E00D, PID: 000BB00A DWT
+TC1BC 1001:615.714   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+TC1BC 1001:616.257   ROMTbl[1][2]: E0002000, CID: B105E00D, PID: 000BB00B FPB
+TC1BC 1001:616.282   CPU_ReadMem(32 bytes @ 0x41006FE0)
+TC1BC 1001:616.810   ROMTbl[0][1]: 41006000, CID: B105900D, PID: 001BB932 MTB-M0+
+TC1BC 1001:616.840   JLINK_Reset()
+TC1BC 1001:616.855     CPU_ReadMem(4 bytes @ 0x20000000)
+TC1BC 1001:617.165     CPU_WriteMem(4 bytes @ 0x20000000)
+TC1BC 1001:617.532     ResetTarget() start
+TC1BC 1001:617.554      J-Link Script File: Executing ResetTarget()
+TC1BC 1001:617.862     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+TC1BC 1001:618.164     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+TC1BC 1001:618.506     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+TC1BC 1001:620.041     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+TC1BC 1001:620.396     CPU_ReadMem(4 bytes @ 0x41002100)
+TC1BC 1001:620.728     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+TC1BC 1001:621.122     ResetTarget() end
+TC1BC 1001:624.486     CPU_WriteMem(4 bytes @ 0xE0002000)
+TC1BC 1001:624.856     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+TC1BC 1001:625.171     CPU_ReadMem(4 bytes @ 0xE0001000)
+TC1BC 1001:625.489     CPU_WriteMem(4 bytes @ 0xE0001000)
+TC1BC 1001:625.836   - 9.015ms
+TC1BC 1001:625.868   JLINK_Go()
+TC1BC 1001:625.889     CPU_ReadMem(4 bytes @ 0xE0001000)
+TC1BC 1001:626.253     CPU_WriteMem(4 bytes @ 0xE0001000)
+TC1BC 1001:626.814     CPU_WriteMem(4 bytes @ 0xE0001004)
+TC1BC 1001:627.600   - 1.742ms
+TC1BC 1001:627.616 - 124.278ms
+TC1BC 1001:637.235 JLINK_Close()
+TC1BC 1001:652.401 - 15.194ms
+TC1BC 1001:652.436   
+TC1BC 1001:652.446   Closed
